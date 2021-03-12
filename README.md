@@ -12,10 +12,10 @@ how to open the project :
 6- npm install mongoose ( so we can use mongodb ).\
 7- npm install body-parser cors express .\
 8- open 2 terminals ( one for the client folder (front) and another one for the server (back)).\
-9- run the project ( npm start from both of the terminals ).\
+9- run the project ( npm start from both of the terminals ).
 
 Note :\
-you may have some problems using crud and that's because mongodb cloud must get your ip address ).\
+you may have some problems using crud and that's because mongodb cloud must get your ip address ).
 
 ![user interface](https://user-images.githubusercontent.com/49190228/110955976-72b1b700-834a-11eb-856c-5db13f78c6d0.PNG)
 
