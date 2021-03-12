@@ -1,8 +1,8 @@
-this is mern crud project.\
+this is mern crud project.
 
-database : i used mongodb cloud database to store data.\
+database : i used mongodb cloud database to store data.
 
-how to open the project :\
+how to open the project :
 
 1- clone the project in your desktop.\
 2- open the project with VS Code.\
