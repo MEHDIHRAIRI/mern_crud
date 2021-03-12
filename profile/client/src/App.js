@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect,useState} from 'react';
 import {Container, AppBar, Typography, Grow, Grid} from '@material-ui/core';
 import courses from './components/images/1.png';
 import Courses from './components/Courses/Courses.js';
@@ -7,9 +7,8 @@ import useStyles from './styles';
 import {useDispatch} from 'react-redux';
 import {getCourses} from './actions/Courses'
 
-
-
 const App = () =>{
+    const [currentId, setCurrentId] = useState(null); 
     const classes = useStyles();
     const dispatch = useDispatch();
 
@@ -31,10 +30,10 @@ const App = () =>{
                 <Container>
                     <Grid container justify="space-between" alignItems="stretch" spacing={3}>
                         <Grid items xs={12} sm={7}>
-                           <Courses /> 
+                           <Courses setCurrentId={setCurrentId} /> 
                         </Grid>
                         <Grid items xs={12} sm={4}>
-                            <Form />
+                            <Form currentId = {currentId} setCurrentId={setCurrentId} />
                         </Grid>
                     </Grid>
                 </Container>
